@@ -48,3 +48,23 @@ print("l" not in ["a", "k", "t"])
 print("tortuga" in "tengo una tortuga")
 print(b"lolito" in b"yepa, soy lolito")
 print(bytearray(b"iphone") in bytearray(b"iphone18"))
+
+#Slices
+
+lista = ["primero", "segundo", "tercero",
+          "cuarto", "quinto", "sexto",]
+print(lista[-1])
+print(lista[-2])
+
+alfa = [
+    "a", "b", "c", "d", "e", "f", "g",
+    "h", "i", "j", "k", "l", "m", "n",
+    "ñ", "o", "p", "q", "r", "s", "t",
+    "u", "v", "w", "x", "y", "z", 
+]
+print(alfa[0:4]) #se podría dejar [:4] básicamente es igual.
+print(alfa[3:6]) # o si queremos que empiece desde un elemento hasta el final de la lista sería [3:]
+
+# para copiar una lista también podríamos dejarlo en blanco [:]
+copia = alfa[-2:]
+print(copia)
