@@ -66,5 +66,51 @@ print(alfa[0:4]) #se podría dejar [:4] básicamente es igual.
 print(alfa[3:6]) # o si queremos que empiece desde un elemento hasta el final de la lista sería [3:]
 
 # para copiar una lista también podríamos dejarlo en blanco [:]
-copia = alfa[-2:]
+
+copia = alfa[-2:] # Podemos hacerlo a la inversa y obtener los últimos caracteres
 print(copia)
+
+copiaSegunda = alfa[:-2] #muestra toda la fila hasta el penultimo número
+
+print(alfa[1:7:2]) #al agregarle un tercer número indicamos que nos muestre los elementos de ese rango en una determinada secuencia. 
+
+print(alfa[::3]) # con esto muestra toda la lista con una determinada secuencia.
+
+textazo = "Hola Mundo"
+
+print(textazo[5:]) # Retorna "Mundo"
+
+print(textazo[::2]) # Retorna "Hl ud"
+
+rango = range(10, 100, 2)
+seccion = rango[3: 30]
+print(type(seccion))
+
+alpha = [
+    "a", "b", "c", "d", "e", "f", "g",
+    "h", "i", "j", "k", "l", "m", "n",
+    "ñ", "o", "p", "q", "r", "s", "t",
+    "u", "v", "w", "x", "y", "z"
+]
+
+alpha[5:10] = 1 ,2, 3, 4, 5     # Si la secuencia es mutable podemos módificarla! 
+
+print(alpha)
+
+borrandoAlfa = [
+    "a", "b", "c", "d", "e", "f", "g",
+    "h", "i", "j", "k", "l", "m", "n",
+    "ñ", "o", "p", "q", "r", "s", "t",
+    "u", "v", "w", "x", "y", "z"
+]
+
+del borrandoAlfa[:20:2]
+
+print(borrandoAlfa)
+
+
+
+
+
+
+ 
