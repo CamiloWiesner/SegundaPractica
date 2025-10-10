@@ -104,9 +104,32 @@ borrandoAlfa = [
     "u", "v", "w", "x", "y", "z"
 ]
 
-del borrandoAlfa[:20:2]
+del borrandoAlfa[:20:2] # con del podemos borrar valores de la cadena, incluso dándole una secuencia 
 
 print(borrandoAlfa)
+
+# VISTAS DE MEMORIA
+
+mis_bytes = b"abcdefghijklmnopqrstuvwzyz"
+vista = memoryview(mis_bytes)
+print("Como lista:")
+print(vista.tolist()) # retorna datos del buffer en forma de lista
+print("Como bytes:") 
+print(vista.tobytes())  # retorna datos del buffer en forma de cadena de bytes
+
+sin_escritura = b"12345"
+con_escritura = bytearray(b"12345")
+
+vista_con_escritura = memoryview(con_escritura) 
+vista_sin_escritura = memoryview(sin_escritura)
+
+print('"vista_sin_escritura":')
+print("\tTamaño de objeto:", vista_sin_escritura.itemsize)
+print("\tEs Read Only:", vista_sin_escritura.readonly)
+
+print('"vista_con_escritura":')
+print("\tTamaño de objeto:", vista_con_escritura.itemsize)
+print("\tEs Read Only:", vista_con_escritura.readonly)
 
 
 
