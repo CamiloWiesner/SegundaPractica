@@ -33,3 +33,13 @@ diccionarioTres = dict(color = "rojo",
                        colorDos = "Amarillo",
                        colorTres = " purpura")
 print(diccionarioTres)
+
+diccionarioCuatro = dict([("raza", "golden retriever"), ["pelo", "amarillo"]])
+print(diccionarioCuatro)
+
+claves = ["1", "2", "3"]
+valores = ["X", "Y", "Z"]
+
+listas = zip(claves, valores)
+dicci = dict(listas)
+print(dicci) 
