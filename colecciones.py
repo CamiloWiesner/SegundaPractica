@@ -40,6 +40,26 @@ print(diccionarioCuatro)
 claves = ["1", "2", "3"]
 valores = ["X", "Y", "Z"]
 
-listas = zip(claves, valores)
+listas = zip(claves, valores) # Zip() es un iterador
 dicci = dict(listas)
 print(dicci) 
+
+coordenadas = {(0,0): "Eje", (0,1):"universidad", (1,1):"raiz"} # las claves de un diccionario deben ser objetos hashables. 
+print(coordenadas[(0,1)])
+
+referencias = {
+    "libros": ({"titulo": "Juego de Pythons", "autor": "G. R. R. Python"},
+               {"titulo": "Un Mago de Python", "autor": "U. K. Python"},
+               {"titulo": "Python y yo", "autor": "J. R. Python"}
+              ),
+    "peliculas": ["Python III", "Con Python y a lo loco", "Pulp Python"]
+}
+
+segundo_libro = referencias["libros"][1]["titulo"]
+
+tercera_pelicula = referencias["peliculas"][2]
+
+print('El segundo libro se titula "{}"'.format(segundo_libro))
+print('La tercera película se titula "{}"'.format(tercera_pelicula))
+
+ 
