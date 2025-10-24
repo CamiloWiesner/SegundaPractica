@@ -14,3 +14,14 @@ sin_repeticiones = list(set(repetidas)) # Con esto podemos eliminar elementos re
 
 print(sin_repeticiones)
 
+pares = {(1, 3), (2, 4), (9, 2)} #Se puede hacer sets que contengan valores hashables más no l ocontrario. 
+
+print(pares)
+
+mi_set_ = set("1234567890")
+print(len(mi_set_)) #Con esto podemos contar el números de elementos en un set
+ 
+a = {1,2,3,4,5,6,7}
+b = {1,2,8,9,10}
+union = a|b # podemos hacer una unión de sets con (|)
+print(union) 
