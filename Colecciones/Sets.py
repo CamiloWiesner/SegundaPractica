@@ -23,5 +23,26 @@ print(len(mi_set_)) #Con esto podemos contar el números de elementos en un set
  
 a = {1,2,3,4,5,6,7}
 b = {1,2,8,9,10}
+
 union = a|b # podemos hacer una unión de sets con (|)
 print(union) 
+c = {1, 2, 3, 4, 5, 6, 7}
+d = {1, 2, 8, 9 , 10}
+
+diferencia = c - d # Con el (-) retornamos otro set con elementos del primero de ellos o viceveras pero excluyendo los elementos que tengan en común con el otro
+print(diferencia)
+
+al_reves = d - c
+print(al_reves)
+
+e = {1, 2, 3, 4, 5, 6, 7}
+f = {1, 2, 8, 9 , 10}
+
+diferencia_simetrica = e ^ f # Con la diferencia simetrica  "unimos" los elmentos de ambos sets pero excluyendo los que se repiten en ambos. 
+print(diferencia_simetrica)
+
+g = {1, 2, 3, 4, 5, 6, 7}
+h = {1, 2, 8, 9 , 10}
+
+interseccion = g & h # Con una intersección hacemos lo contrario a una diferencia simetrica.
+print(interseccion)
