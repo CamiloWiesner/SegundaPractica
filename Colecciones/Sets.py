@@ -46,3 +46,25 @@ h = {1, 2, 8, 9 , 10}
 
 interseccion = g & h # Con una intersección hacemos lo contrario a una diferencia simetrica.
 print(interseccion)
+
+i = {1, 2, 3, 4, 5, 6, 7}
+j = {1, 2, 8, 9 , 10}
+
+print(i.union(j)) # Método para la unión
+print(i.difference(j)) # Método para difference 
+print(i.symmetric_difference(j)) # Método para la diferencia simétrica
+print(i.intersection(j)) # Método para interseccción 
+
+flores = {"Margarita", "Rosa", "Lirio", "violeta"}
+print(flores)
+flores.add("Gladiolo") # Añade un elemento al set
+print(flores)
+  
+vocales = set("aeiou")
+print(vocales)
+vocales.discard("e") # Elimina del set el elemento
+print(vocales)
+vocales.clear() # Borra todos los elementos del set
+print(vocales)
+
+ 
